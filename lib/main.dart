@@ -40,7 +40,7 @@ class _MonPageState extends State<MonPage> {
           children: <Widget>[
             Text('Bienvenue'),
 
-            Checkbox(
+            Switch(
               onChanged: (bool? value) {
                 setState(() => val1 = value!);
               },
