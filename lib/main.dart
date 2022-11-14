@@ -26,7 +26,7 @@ class MonPage extends StatefulWidget {
 
 class _MonPageState extends State<MonPage> {
 
-  bool val1=true;
+  int radioVal=0;
 
   @override
   Widget build(BuildContext context) {
@@ -40,11 +40,16 @@ class _MonPageState extends State<MonPage> {
           children: <Widget>[
             Text('Bienvenue'),
 
-            Switch(
-              onChanged: (bool? value) {
-                setState(() => val1 = value!);
-              },
-              value: val1, 
+            Row(
+              children: [0,1,2,3,4,5]
+                .map((int index) => Radio<int>(
+                  value: index,
+                  groupValue: radioVal,
+                  onChanged: (int? value) {
+                    setState(() => radioVal = value!);
+                  },
+                ))
+                .toList(),         
             )
           ],
         ),
