@@ -30,9 +30,9 @@ class _MonPageState extends State<MonPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Test des bouttons'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('Test des bouttons'),
+      // ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
