@@ -26,21 +26,29 @@ class MonPage extends StatefulWidget {
 
 class _MonPageState extends State<MonPage> {
 
-  String value='';
-  int val = 0;
+  int val1=0;
 
-  void onShow() {
+  void change( int s)
+  {
     setState(() {
-      value = new DateTime.now().toString();
-      val+=1;
-    });
-  }
-  void offShow() {
-    setState(() {
-      val-=1;
+      val1=s;
     });
   }
 
+  Widget radio()
+  {
+    List <Widget> _Button_radio = [];
+
+    for(int i=0; i<4; i++)
+    {
+      _Button_radio.add(
+        Radio(value: i, groupValue: val1, onChanged: change)
+      );
+    }
+
+    Column column = Column(children: _Button_radio,);
+    return column;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -48,28 +56,15 @@ class _MonPageState extends State<MonPage> {
       appBar: AppBar(
         title: Text('Test des bouttons'),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround ,
-        children: <Widget>[
-          Text(
-            'value = $val , date = $value',
-            style: TextStyle(fontSize: 20),
-            textAlign: TextAlign.center,
-          ),
-          IconButton(
-            icon: Icon(Icons.account_balance_wallet_sharp, color: Colors.red,),
-            onPressed: offShow,
-            tooltip: "Moins",
-          ),
-        ],
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            Text('Bienvenue'),
+            radio(),
+          ],
+        ),
+        
       ),
-
-      floatingActionButton: FloatingActionButton(
-        onPressed: onShow,
-        backgroundColor: Colors.blue,
-        child: Icon(Icons.account_balance_wallet_sharp),
-      ),
-
       
 
     );
