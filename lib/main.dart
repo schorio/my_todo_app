@@ -41,6 +41,7 @@ class _MonPageState extends State<MonPage> {
             Text('Bienvenue'),
 
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [0,1,2,3,4,5]
                 .map((int index) => Radio<int>(
                   value: index,
