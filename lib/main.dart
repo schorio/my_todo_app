@@ -26,7 +26,7 @@ class MonPage extends StatefulWidget {
 
 class _MonPageState extends State<MonPage> {
 
-  bool val1=false;
+  bool val1=true;
 
   @override
   Widget build(BuildContext context) {
@@ -39,15 +39,13 @@ class _MonPageState extends State<MonPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('Bienvenue'),
+
             Checkbox(
+              onChanged: (bool? value) {
+                setState(() => val1 = value!);
+              },
               value: val1, 
-              onChanged: (bool? v) {
-                setState(() {
-                  v = false;
-                  val1=v!;
-                });
-              }
-              ),
+            )
           ],
         ),
         
