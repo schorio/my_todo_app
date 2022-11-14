@@ -26,29 +26,7 @@ class MonPage extends StatefulWidget {
 
 class _MonPageState extends State<MonPage> {
 
-  int val1=0;
-
-  void change( int s)
-  {
-    setState(() {
-      val1=s;
-    });
-  }
-
-  Widget radio()
-  {
-    List <Widget> _Button_radio = [];
-
-    for(int i=0; i<4; i++)
-    {
-      _Button_radio.add(
-        Radio(value: i, groupValue: val1, onChanged: change)
-      );
-    }
-
-    Column column = Column(children: _Button_radio,);
-    return column;
-  }
+  bool val1=false;
 
   @override
   Widget build(BuildContext context) {
@@ -58,9 +36,18 @@ class _MonPageState extends State<MonPage> {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('Bienvenue'),
-            radio(),
+            Checkbox(
+              value: val1, 
+              onChanged: (bool? v) {
+                setState(() {
+                  v = false;
+                  val1=v!;
+                });
+              }
+              ),
           ],
         ),
         
