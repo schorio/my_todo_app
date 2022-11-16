@@ -26,7 +26,7 @@ class Home extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   
-                  contentPadding: EdgeInsets.all(0),
+                  contentPadding: EdgeInsets.all(5),
                   
                   prefixIcon: 
                     Icon(
