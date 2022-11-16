@@ -13,9 +13,16 @@ class Home extends StatelessWidget {
       appBar: _buildAppBar(),
       
       body: Container(
+        padding: EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-            
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+              ),
+            )
           ],
         ),
       ),
