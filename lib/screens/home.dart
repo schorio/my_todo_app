@@ -37,8 +37,11 @@ class Home extends StatelessWidget {
                     prefixIconConstraints: BoxConstraints(
                       maxHeight: 20,
                       minWidth: 25,
-                    )
+                    ),
                     
+                    border: InputBorder.none,
+                    hintText: 'Recherche',
+                    hintStyle: TextStyle(color: tdGrey),
                 ),
               ),
             )
