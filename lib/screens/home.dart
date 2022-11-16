@@ -14,6 +14,7 @@ class Home extends StatelessWidget {
       
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 15),
+        margin: EdgeInsets.symmetric(vertical: 15),
         child: Column(
           children: [
             Container(
