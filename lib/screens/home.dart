@@ -55,6 +55,7 @@ class Home extends StatelessWidget {
   AppBar _buildAppBar() {
     return AppBar(
       backgroundColor: tdBGColor,
+      elevation: 0,
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
