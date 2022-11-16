@@ -10,31 +10,36 @@ class Home extends StatelessWidget {
       
     backgroundColor: tdBGColor,
 
-      appBar: AppBar(
-        backgroundColor: tdBGColor,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Icon(
-              Icons.menu,
-              color: tdBlack,
-              size: 30,
-            ),
-            Container(
-              height: 40,
-              width: 40,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Image.asset('assets/images/scho.jpg'),
-              ),
-            ),
-          ]
-        ),
-      ),
+      appBar: _buildAppBar(),
       
       body: Container(
         child: Text('Mon Page d\'acceuil'),
       ),
     );
   }
+
+  AppBar _buildAppBar() {
+    return AppBar(
+      backgroundColor: tdBGColor,
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Icon(
+            Icons.menu,
+            color: tdBlack,
+            size: 30,
+          ),
+          Container(
+            height: 40,
+            width: 40,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image.asset('assets/images/scho.jpg'),
+            ),
+          ),
+        ]
+      ),
+    );
+  }
+  
 }
