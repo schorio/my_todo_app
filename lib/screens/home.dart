@@ -13,7 +13,11 @@ class Home extends StatelessWidget {
       appBar: _buildAppBar(),
       
       body: Container(
-        child: Text('Mon Page d\'acceuil'),
+        child: Column(
+          children: [
+            
+          ],
+        ),
       ),
     );
   }
@@ -41,5 +45,5 @@ class Home extends StatelessWidget {
       ),
     );
   }
-  
+
 }
