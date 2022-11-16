@@ -11,6 +11,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: tdBGColor,
         title: Row(
+          mainAxisAlignment: mainAxisAlignment.spaceBetween,
           children: [
             Icon(
               Icons.menu,
