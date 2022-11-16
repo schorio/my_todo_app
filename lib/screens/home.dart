@@ -22,6 +22,16 @@ class Home extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20),
               ),
+              child: TextField(
+                decoration: InputDecoration(
+                  contentPadding: EdgeInsets.all(0),
+                  prefixIcon: Icon(
+                    Icons.search,
+                    color: tdBlack,
+                    size: 20,
+                  ),
+                ),
+              ),
             )
           ],
         ),
