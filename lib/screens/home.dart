@@ -17,7 +17,15 @@ class Home extends StatelessWidget {
         margin: EdgeInsets.symmetric(vertical: 15),
         child: Column(
           children: [
-            Container(
+            searchBox(),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget searchBox() {
+    return Container(
               padding: EdgeInsets.symmetric(horizontal: 15),
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -45,11 +53,7 @@ class Home extends StatelessWidget {
                     hintStyle: TextStyle(color: tdGrey),
                 ),
               ),
-            )
-          ],
-        ),
-      ),
-    );
+            );
   }
 
   AppBar _buildAppBar() {
