@@ -20,6 +20,14 @@ class ToDoItem extends StatelessWidget {
             Icons.check_box,
             color: tdBlue,
           ),
+          title: Text(
+            'Regarder l\'email',
+            style: TextStyle(
+              fontSize: 16,
+              color: tdBlack,
+              decoration: TextDecoration.lineThrough,
+            ),
+          ),
         ) 
       );
   }
