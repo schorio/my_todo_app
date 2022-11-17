@@ -11,7 +11,9 @@ class ToDoItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         child: ListTile(
-          onTap: () { },
+          onTap: () {
+            print('Test de clique du tache');
+          },
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(18)
           ),
