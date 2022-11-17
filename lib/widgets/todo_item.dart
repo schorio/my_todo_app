@@ -19,6 +19,7 @@ class ToDoItem extends StatelessWidget {
           leading: Icon(
             Icons.check_box,
             color: tdBlue,
+            size: 20,
           ),
           title: Text(
             'Regarder l\'email',
