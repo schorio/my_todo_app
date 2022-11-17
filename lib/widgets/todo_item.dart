@@ -16,17 +16,34 @@ class ToDoItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(20)
           ),
           tileColor: Colors.white,
+
           leading: Icon(
             Icons.check_box,
             color: tdBlue,
             size: 20,
           ),
+
           title: Text(
             'Regarder l\'email',
             style: TextStyle(
               fontSize: 14,
               color: tdBlack,
               decoration: TextDecoration.lineThrough,
+            ),
+          ),
+
+          trailing: Container(
+            height: 28,
+            width: 28,
+            decoration: BoxDecoration(
+              color: tdRed,
+              borderRadius: BorderRadius.circular(5)
+            ),
+            child: IconButton(
+              color: Colors.white,
+              iconSize: 13,
+              icon: Icon(Icons.delete),
+              onPressed: () {},
             ),
           ),
         ) 
