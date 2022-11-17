@@ -41,15 +41,15 @@ class ToDoItem extends StatelessWidget {
           trailing: Container(
             padding: EdgeInsets.all(0),
             margin: EdgeInsets.symmetric(vertical: 8),
-            height: 30,
-            width: 30,
+            height: 28,
+            width: 28,
             decoration: BoxDecoration(
               color: tdRed,
               borderRadius: BorderRadius.circular(5)
             ),
             child: IconButton(
               color: Colors.white,
-              iconSize: 15,
+              iconSize: 13,
               icon: Icon(Icons.delete),
               onPressed: () {},
             ),
