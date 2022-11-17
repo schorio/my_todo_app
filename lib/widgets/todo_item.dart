@@ -13,7 +13,7 @@ class ToDoItem extends StatelessWidget {
         child: ListTile(
           onTap: () { },
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20)
+            borderRadius: BorderRadius.circular(18)
           ),
 
           contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
@@ -37,16 +37,16 @@ class ToDoItem extends StatelessWidget {
 
           trailing: Container(
             padding: EdgeInsets.all(0),
-            margin: EdgeInsets.symmetric(vertical: 12),
-            height: 28,
-            width: 28,
+            margin: EdgeInsets.symmetric(vertical: 8),
+            height: 30,
+            width: 30,
             decoration: BoxDecoration(
               color: tdRed,
               borderRadius: BorderRadius.circular(5)
             ),
             child: IconButton(
               color: Colors.white,
-              iconSize: 13,
+              iconSize: 15,
               icon: Icon(Icons.delete),
               onPressed: () {},
             ),
