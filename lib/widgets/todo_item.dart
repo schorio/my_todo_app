@@ -19,7 +19,7 @@ class ToDoItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(18)
           ),
 
-          contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+          contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
 
           tileColor: Colors.white,
 
