@@ -13,8 +13,7 @@ class Home extends StatelessWidget {
       appBar: _buildAppBar(),
       
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 15),
-        margin: EdgeInsets.symmetric(vertical: 15),
+        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
         child: Column(
           children: [
             searchBox(),
