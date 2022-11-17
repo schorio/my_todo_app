@@ -10,6 +10,7 @@ class ToDoItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(bottom: 15),
         child: ListTile(
           onTap: () {
             print('Test de clique du tache');
