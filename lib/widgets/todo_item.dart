@@ -2,6 +2,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:flutter/material.dart';
+import 'package:my_todo_app/constants/colors.dart';
 
 class ToDoItem extends StatelessWidget {
   const ToDoItem({super.key});
@@ -15,6 +16,10 @@ class ToDoItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(20)
           ),
           tileColor: Colors.white,
+          leading: Icon(
+            Icons.check_box,
+            color: tdBlue,
+          ),
         ) 
       );
   }
