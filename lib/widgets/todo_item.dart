@@ -24,7 +24,7 @@ class ToDoItem extends StatelessWidget {
           title: Text(
             'Regarder l\'email',
             style: TextStyle(
-              fontSize: 16,
+              fontSize: 14,
               color: tdBlack,
               decoration: TextDecoration.lineThrough,
             ),
