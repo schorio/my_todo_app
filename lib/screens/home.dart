@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
                         ToDoItem(
                           todo: todoo,
                           onToDoChanged: _handleToChange,
-                          onDeleteItem: ,
+                          onDeleteItem: _deleteToDoItem,
                         ),
                       
                     ],
