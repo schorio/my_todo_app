@@ -64,7 +64,7 @@ class Home extends StatelessWidget {
                     ),
                     padding: EdgeInsets.symmetric(
                       horizontal: 20,
-                      vertical: 5,
+                      vertical: 0,
                     ),
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -81,6 +81,22 @@ class Home extends StatelessWidget {
                         hintText: 'Ajouter une nouvelle tache',
                         border: InputBorder.none
                       ),
+                    ),
+                  ),
+                ),
+
+                Container(
+                  margin: EdgeInsets.only(
+                    bottom: 20,
+                    right: 20,
+                  ),
+                  child: ElevatedButton(
+                    child: Text('+', style: TextStyle(fontSize: 35),),
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      primary: tdBlue,
+                      minimumSize: Size(40, 40),
+                      elevation: 10,
                     ),
                   ),
                 )
