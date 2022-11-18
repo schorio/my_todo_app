@@ -50,6 +50,7 @@ class _HomeState extends State<Home> {
                         ToDoItem(
                           todo: todoo,
                           onToDoChanged: _handleToChange,
+                          onDeleteItem: ,
                         ),
                       
                     ],
@@ -120,6 +121,10 @@ class _HomeState extends State<Home> {
     setState(() {
       todo.isDone = !todo.isDone;
     });
+  }
+
+  void _deleteToDoItem(String id) {
+    todosList.removeWhere((item) => item.id == id);
   }
 
   Widget searchBox() {
