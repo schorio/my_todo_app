@@ -124,7 +124,9 @@ class _HomeState extends State<Home> {
   }
 
   void _deleteToDoItem(String id) {
-    todosList.removeWhere((item) => item.id == id);
+    setState(() {
+      todosList.removeWhere((item) => item.id == id);
+    });
   }
 
   Widget searchBox() {
