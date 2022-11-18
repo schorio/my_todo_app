@@ -50,6 +50,15 @@ class Home extends StatelessWidget {
               ],
             ),
           ),
+
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Row(
+              children: [
+                
+              ],
+            ),
+          )
         ],
       ),
     );
