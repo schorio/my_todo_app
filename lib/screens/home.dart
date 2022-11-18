@@ -76,6 +76,12 @@ class Home extends StatelessWidget {
                       )],
                       borderRadius: BorderRadius.circular(10)
                     ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Ajouter une nouvelle tache',
+                        border: InputBorder.none
+                      ),
+                    ),
                   ),
                 )
               ],
