@@ -1,5 +1,3 @@
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:flutter/material.dart';
 
@@ -35,7 +33,7 @@ class ToDoItem extends StatelessWidget {
           ),
 
           title: Text(
-            'Regarder l\'email',
+            todo.todoText!,
             style: TextStyle(
               fontSize: 14,
               color: tdBlack,
