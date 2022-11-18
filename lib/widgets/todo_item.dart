@@ -7,6 +7,7 @@ import '../constants/colors.dart';
 class ToDoItem extends StatelessWidget {
 
   final ToDo todo;
+  final onToDoChanged;
 
   const ToDoItem({super.key, required this.todo});
 
@@ -16,7 +17,7 @@ class ToDoItem extends StatelessWidget {
       margin: EdgeInsets.only(bottom: 12),
         child: ListTile(
           onTap: () {
-            print('Test de clique du tache');
+            onToDoChanged(todo);
           },
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(18)
