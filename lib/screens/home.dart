@@ -47,7 +47,10 @@ class _HomeState extends State<Home> {
                       ),
 
                       for (ToDo todoo in todosList)
-                        ToDoItem(todo: todoo,),
+                        ToDoItem(
+                          todo: todoo,
+                          onToDoChanged: _handleToChange,
+                        ),
                       
                     ],
                   )
