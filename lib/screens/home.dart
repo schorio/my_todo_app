@@ -113,6 +113,12 @@ class _HomeState extends State<Home> {
     );
   }
 
+  void _handleToChange(ToDo todo) {
+    setState(() {
+      todo.isDone = !todo.isDone;
+    });
+  }
+
   Widget searchBox() {
     return Container(
               padding: EdgeInsets.symmetric(horizontal: 15),
