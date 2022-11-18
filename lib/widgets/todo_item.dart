@@ -2,10 +2,15 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:flutter/material.dart';
-import 'package:my_todo_app/constants/colors.dart';
+
+import '../model/todo.dart';
+import '../constants/colors.dart';
 
 class ToDoItem extends StatelessWidget {
-  const ToDoItem({super.key});
+
+  final ToDo todo;
+
+  const ToDoItem({super.key, required this.todo});
 
   @override
   Widget build(BuildContext context) {
