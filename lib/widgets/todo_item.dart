@@ -8,8 +8,9 @@ class ToDoItem extends StatelessWidget {
 
   final ToDo todo;
   final onToDoChanged;
+  final onDeleteItem;
 
-  const ToDoItem({super.key, required this.todo, required this.onToDoChanged});
+  const ToDoItem({super.key, required this.todo, required this.onToDoChanged, required this.onDeleteItem});
 
   @override
   Widget build(BuildContext context) {
