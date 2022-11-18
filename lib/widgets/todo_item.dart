@@ -9,7 +9,7 @@ class ToDoItem extends StatelessWidget {
   final ToDo todo;
   final onToDoChanged;
 
-  const ToDoItem({super.key, required this.todo});
+  const ToDoItem({super.key, required this.todo, required this.onToDoChanged});
 
   @override
   Widget build(BuildContext context) {
