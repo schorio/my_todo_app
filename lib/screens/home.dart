@@ -17,36 +17,40 @@ class Home extends StatelessWidget {
 
       appBar: _buildAppBar(),
       
-      body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-        child: Column(
-          children: [
-            searchBox(),
-            Expanded(
-              child: ListView(
-                children: [
-                  Container(
-                    margin: EdgeInsets.only(
-                      top: 40,
-                      bottom: 20,
-                    ),
-                    child: Text(
-                      'Tout les taches',
-                      style: TextStyle(
-                        fontSize: 23,
-                        fontWeight: FontWeight.w500
+      body: Stack(
+        children: [
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+            child: Column(
+              children: [
+                searchBox(),
+                Expanded(
+                  child: ListView(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(
+                          top: 40,
+                          bottom: 20,
+                        ),
+                        child: Text(
+                          'Tout les taches',
+                          style: TextStyle(
+                            fontSize: 23,
+                            fontWeight: FontWeight.w500
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
 
-                  for (ToDo todoo in todosList)
-                    ToDoItem(todo: todoo,),
-                  
-                ],
-              )
+                      for (ToDo todoo in todosList)
+                        ToDoItem(todo: todoo,),
+                      
+                    ],
+                  )
+                ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
