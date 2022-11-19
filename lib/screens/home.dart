@@ -129,6 +129,17 @@ class _HomeState extends State<Home> {
     });
   }
 
+  void _addToDoItem(String toDo) {
+    setState(() {
+       todosList.add(
+        ToDo(
+          id: DateTime.now().millisecondsSinceEpoch.toString(),
+          todoText: toDo,
+        )
+       );
+    });
+  }
+
   Widget searchBox() {
     return Container(
               padding: EdgeInsets.symmetric(horizontal: 15),
