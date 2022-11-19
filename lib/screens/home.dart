@@ -139,6 +139,7 @@ class _HomeState extends State<Home> {
         )
        );
     });
+  _todoController.clear();
   }
 
   Widget searchBox() {
