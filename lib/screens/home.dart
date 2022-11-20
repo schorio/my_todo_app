@@ -152,6 +152,10 @@ class _HomeState extends State<Home> {
   _todoController.clear();
   }
 
+  void _runFilter(String enteredKeyword) {
+    
+  }
+
   Widget searchBox() {
     return Container(
               padding: EdgeInsets.symmetric(horizontal: 15),
