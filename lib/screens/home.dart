@@ -87,6 +87,7 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular(10)
                     ),
                     child: TextField(
+                      controller: _todoController,
                       decoration: InputDecoration(
                         hintText: 'Ajouter une nouvelle tache',
                         border: InputBorder.none
