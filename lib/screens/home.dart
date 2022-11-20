@@ -154,7 +154,16 @@ class _HomeState extends State<Home> {
 
   void _runFilter(String enteredKeyword) {
     List<ToDo> results = [];
-    
+    if (enteredKeyword.isEmpty) {
+      results = todosList;
+    }
+    else {
+      results = todosList
+        .where((item) => item.todoText!
+            .toLowerCase()
+            .contains(enteredKeyword.toLowerCase()))
+        .toList();
+    }
   }
 
   Widget searchBox() {
