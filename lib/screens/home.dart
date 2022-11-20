@@ -179,6 +179,7 @@ class _HomeState extends State<Home> {
                 borderRadius: BorderRadius.circular(20),
               ),
               child: TextField(
+                onChanged: (value) => _runFilter(value),
                 decoration: InputDecoration(
                   
                   contentPadding: EdgeInsets.all(5),
