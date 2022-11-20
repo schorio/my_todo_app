@@ -17,6 +17,12 @@ class _HomeState extends State<Home> {
   List<ToDo> _foundToDo = [];
 
   @override
+  void initState() {
+    _foundToDo = todosList;
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       
