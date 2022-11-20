@@ -153,7 +153,6 @@ class _HomeState extends State<Home> {
                 borderRadius: BorderRadius.circular(20),
               ),
               child: TextField(
-                controller: _todoController,
                 decoration: InputDecoration(
                   
                   contentPadding: EdgeInsets.all(5),
